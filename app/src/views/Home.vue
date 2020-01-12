@@ -1,12 +1,19 @@
 <template>
     <div class="home">
-        <h1>Christoph K.</h1>
-        <router-link to="/login">Login</router-link>
+        <p>
+            My name is
+            Christopher K. Jones
+        </p>
     </div>
 </template>
 
 <script>
 export default {
-    name: "Home"
+    name: "Home",
+    data() {
+         return {
+             footerContent:  "This is the footer content"
+         }
+    }
 }
 </script>
