@@ -1,11 +1,24 @@
 <template>
     <div class="contact page">
-        <h1>Contact</h1>
+        <PageTemp :pageDescription="description" :pageTitle="title">
+      Page Content
+    </PageTemp>
     </div>
 </template>
 
 <script>
+import PageTemp from '../components/PageTemp';
+
 export default {
-    name: "contact"
+    name: "contact",
+    data() {
+        return {
+            title: "Contact",
+            description: "Contact me today and let’s work together. I’m always ready!"
+        }
+    },
+  components: {
+      PageTemp
+  }
 }
 </script>

@@ -38,4 +38,17 @@ html {
     background: var(--prime);
     min-height: 100vh;
   }
+  .page-content {
+    height: calc(100vh - 125px);
+}
+
+.vert-align {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    width: 73%;
+    transform: translate(-30%, -50%);
+    padding-left: 300px;
+}
 </style>

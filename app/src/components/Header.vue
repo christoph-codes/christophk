@@ -3,7 +3,11 @@
     <div class="uk-container">
       <vk-grid matched class="uk-child-width-expand@s">
         <div class="">
-          <h1 class="logo">Christopher K. Jones</h1>
+          <router-link to="/"> 
+            <h1 class="logo">
+              Christopher K. Jones
+            </h1>
+          </router-link>
         </div>
         <div class="uk-text-right">
           <MainNav />
@@ -26,11 +30,12 @@ export default {
 
 <style scoped>
 .header {
-  padding: 50px 0;
+  padding: 20px 0;
 }
 .header .logo {
   text-indent: -9999px;
   background: url("../assets/christoph_logo@2x.png") no-repeat;
   background-size: 25%;
+      margin: 0;
 }
 </style>
