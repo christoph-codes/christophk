@@ -1,7 +1,18 @@
 <template>
     <div class="contact page">
         <PageTemp :pageDescription="description" :pageTitle="title">
-      Page Content
+      <vk-grid>
+            <div class="uk-width-1-6@m contact-labels">
+              <p>Email:</p>
+              <p>Phone:</p>
+              <p>Social:</p>
+            </div>
+            <div class="uk-width-5-6@m contact-details">
+              <p><b>tkcwebdev@gmail.com</b></p>
+              <p><b>702.336.0322</b></p>
+              <p><b>@christoph.theartist</b></p>
+            </div>
+      </vk-grid>
     </PageTemp>
     </div>
 </template>
@@ -22,3 +33,14 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.contact-labels p {
+    font-weight: bold;
+    color: white;
+}
+.contact-details p {
+    color: var(--terti);
+    font-weight: lighter;
+}
+</style>

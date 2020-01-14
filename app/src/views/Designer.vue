@@ -2,7 +2,17 @@
   <div class="designer page">
     <PageTemp :pageDescription="description" :pageTitle="title">
       <div class="img-group">
-          <img :src="logos[0]" alt="Kickstarters Logo Design"/>
+          <vk-grid>
+              <div class="logo_img uk-width-1-3@m">
+                <img src="../assets/ks_logo@2x.png" alt="Kickstarterz Custom Logo Design" />
+              </div>
+              <div class="logo_img uk-width-1-3@m">
+                <img src="../assets/ll_logo@2x.png" alt="Lazer Ladies Custom Logo Design" />
+              </div>
+              <div class="logo_img uk-width-1-3@m">
+                <img src="../assets/eig_logo@2x.png" alt="Everett Insurance Group Custom Logo Design" />
+              </div>
+          </vk-grid>
       </div>
     </PageTemp>
   </div>
@@ -17,9 +27,6 @@ export default {
       return {
           title: "Designer",
           description: "Graphic Design. Logo Design. Print Design. Digital Design. Web Design",
-          logos: [
-              "/app/src/assets/ks_logo@2x.png"
-          ]
       }
   },
   components: {
@@ -27,3 +34,14 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.img-group {
+    padding: 50px 0;
+    text-align: center;
+    overflow-x: scroll;
+}
+.logo_img img {
+    max-height: 200px;
+}
+</style>

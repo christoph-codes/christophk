@@ -1,9 +1,9 @@
 <template>
     <div class="page-content">
       <div class="vert-align">
-          <h1>{{ pageTitle }}</h1>
+          
           <slot/>
-        <p class="page-description">{{ pageDescription }}</p>
+        <h1 class="page-title">{{ pageTitle }}</h1><p class="page-description">{{ pageDescription }}</p>
       </div>
     </div>
 </template>
@@ -16,10 +16,15 @@ export default {
 </script>
 
 <style scoped>
-
+.page-title {
+    color: white;
+    padding-top: 10px;
+    border-top: 0.5px solid var(--terti);
+    margin: 50px 0 0;
+    font-weight: lighter;
+}
 .page-description {
     color: var(--terti);
-    padding-top: 10px;
-    border-top: 0.5px solid;
+    margin-top: 0;
 }
 </style>

@@ -1,7 +1,9 @@
 <template>
   <div class="creator page">
     <PageTemp :pageDescription="description" :pageTitle="title">
-      Page Content
+      <div class="creator_logos">
+          <img src="../assets/creator_logos@2x.png" alt="Business ideas created by Christopher K Jones" />
+      </div>
     </PageTemp>
   </div>
 </template>
