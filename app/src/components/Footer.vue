@@ -30,9 +30,8 @@ export default {
 <style scoped>
 .footer {
   bottom: 0;
-  position: absolute;
   width: 100%;
-  padding: 10px 0;
+  padding: 20px 0 0;
 }
 .contact-link {
   display: inline-block;

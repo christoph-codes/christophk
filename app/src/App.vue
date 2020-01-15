@@ -43,12 +43,11 @@ html {
 }
 
 .vert-align {
-    margin: 0;
-    position: absolute;
+    margin: 0 0 0 20%;
+    position: relative;
     top: 50%;
-    left: 30%;
-    width: 73%;
-    transform: translate(-30%, -50%);
-    padding-left: 300px;
+    width: 80%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 </style>
