@@ -1,8 +1,10 @@
 <template>
   <div id="app">
     <Header/>
-    <router-view/>
-    <Footer />
+    <div class="uk-container">
+      <router-view/>
+    </div>
+    <Footer :content=" footerContent " />
   </div>
 </template>
 
@@ -18,3 +20,34 @@ export default {
   }
 }
 </script>
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
+
+:root {
+  --prime: #4E5225;
+  --secon: #A6AE54;
+  --terti: #7F825E;
+  --red: #D35959;
+}
+html {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+}
+  #app {
+    background: var(--prime);
+    min-height: 100vh;
+  }
+  .page-content {
+    height: calc(100vh - 125px);
+}
+
+.vert-align {
+    margin: 0 0 0 20%;
+    position: relative;
+    top: 50%;
+    width: 80%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+</style>
