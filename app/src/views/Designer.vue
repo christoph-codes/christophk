@@ -31,6 +31,12 @@ export default {
   },
   components: {
       PageTemp
+  },
+  metaInfo: {
+    // if no subcomponents specify a metaInfo.title, this title will be used
+    title: 'Christopher Kirk Jones The Designer',
+    // all titles will be injected into this template
+    titleTemplate: '%s | Christoph K'
   }
 };
 </script>
