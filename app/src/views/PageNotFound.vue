@@ -12,6 +12,12 @@ export default {
     title: 'Whoops! Page Not Found!',
     // all titles will be injected into this template
     titleTemplate: '%s | Christoph K'
-  }
+  },
+    meta: [
+      {
+        name: 'description',
+        content: 'This page does not exist, you should navigate to a better page.'
+      }
+    ]
 }
 </script>

@@ -28,7 +28,13 @@ export default {
     // if no subcomponents specify a metaInfo.title, this title will be used
     title: 'Christopher Kirk Jones The Artist',
     // all titles will be injected into this template
-    titleTemplate: '%s | Christoph K'
+    titleTemplate: '%s | Christoph K',
+    meta: [
+      {
+        name: 'description',
+        content: 'Christopher K Jones is a full-time graphic designer, passionate full-stack programmer, and chronic creator of cool projects.'
+      }
+    ]
   }
 };
 </script>
