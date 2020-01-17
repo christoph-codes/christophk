@@ -17,6 +17,12 @@ export default {
   components: {
     Header,
     Footer
+  },
+  metaInfo: {
+    // if no subcomponents specify a metaInfo.title, this title will be used
+    title: 'Christopher Kirk Jones The Artist',
+    // all titles will be injected into this template
+    titleTemplate: '%s | Christoph K'
   }
 }
 </script>
@@ -39,7 +45,7 @@ html {
     min-height: 100vh;
   }
   .page-content {
-    height: calc(100vh - 125px);
+    height: calc(100vh - 145px);
 }
 
 .vert-align {

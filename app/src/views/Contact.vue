@@ -30,6 +30,18 @@ export default {
     },
   components: {
       PageTemp
+  },
+  metaInfo: {
+    // if no subcomponents specify a metaInfo.title, this title will be used
+    title: 'Contact Christopher Kirk Jones The Artist',
+    // all titles will be injected into this template
+    titleTemplate: '%s | Christoph K',
+    meta: [
+      {
+        name: 'description',
+        content: 'Contact Christopher K Jones today to get a hold of him!'
+      }
+    ]
   }
 }
 </script>

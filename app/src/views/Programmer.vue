@@ -32,6 +32,18 @@ export default {
     },
   components: {
       PageTemp
+  },
+  metaInfo: {
+    // if no subcomponents specify a metaInfo.title, this title will be used
+    title: 'Christopher Kirk Jones The Programmer',
+    // all titles will be injected into this template
+    titleTemplate: '%s | Christoph K',
+    meta: [
+      {
+        name: 'description',
+        content: 'Christopher K Jones is a passionate full-stack programmer who writes in HTML, CSS, JS, Vue.js, React, Firebase, MYSQL, Node, PHP, and anything else!'
+      }
+    ]
   }
 }
 </script>

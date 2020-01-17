@@ -7,6 +7,10 @@ import Programmer from './views/Programmer.vue';
 import Creator from './views/Creator.vue';
 import Contact from './views/Contact.vue';
 import PageNotFound from './views/PageNotFound.vue';
+import Meta from 'vue-meta'
+
+Vue.use(Router)
+Vue.use(Meta)
 
 Vue.use(Router);
 
