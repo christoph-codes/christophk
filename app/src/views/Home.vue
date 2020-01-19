@@ -56,4 +56,9 @@ h2.name-line {
     color: white;
     text-decoration: none;
 }
+@media(max-width: 767px) {
+  .home .page-content {
+    margin-top: 70px;
+  }
+}
 </style>

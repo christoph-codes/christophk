@@ -56,4 +56,9 @@ export default {
 .logo_img img {
     max-height: 200px;
 }
+@media(max-width: 767px) {
+  .img-group {
+    padding: 0;
+  }
+}
 </style>

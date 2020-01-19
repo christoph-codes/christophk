@@ -1,14 +1,14 @@
 <template>
-  <div class="footer">
+  <div class="main-footer">
     <div class="uk-container">
       <vk-grid matched class="uk-child-width-expand@s">
-        <div class="footer-nav">
+        <div class="footer-nav uk-visible@m">
           <router-link class="contact-link" to="/contact"
             >Get In Touch</router-link
           >
         </div>
         <div class="footer-copyright">
-          <Copyright class="uk-text-right" />
+          <Copyright />
         </div>
       </vk-grid>
     </div>
@@ -19,16 +19,15 @@
 import Copyright from "../components/Copyright.vue";
 
 export default {
-  name: "footer",
+  name: "main-footer",
   components: {
     Copyright
-  },
-  props: ["content"]
+  }
 };
 </script>
 
 <style scoped>
-.footer {
+.main-footer {
   bottom: 0;
   width: 100%;
   padding: 20px 0 0;

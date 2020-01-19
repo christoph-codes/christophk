@@ -19,9 +19,15 @@ export default {
 }
 .copyright p {
     font-size: 12px;
+    text-align: right;
 }
 .copyright svg path {
   fill: var(--red);
   stroke: none;
+}
+@media(max-width: 767px) {
+  .copyright p {
+    text-align: center;
+}
 }
 </style>

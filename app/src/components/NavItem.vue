@@ -1,6 +1,6 @@
 <template>
     <li class="navitem">
-        <router-link :to="to">{{ name }}</router-link>
+        <router-link @click="show = false" :to="to">{{ name }}</router-link>
     </li>
 </template>
 
@@ -11,11 +11,11 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 li.navitem {
     display: inline-block;
-    padding: 0 10px;
-    font-size: 14px;
+        padding: 20px 10px;
+    font-size: 18px;
 }
 li.navitem a {
     color: var(--secon);
