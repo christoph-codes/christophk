@@ -2,12 +2,12 @@
     <div class="contact page">
         <PageTemp :pageDescription="description" :pageTitle="title">
       <vk-grid>
-            <div class="uk-width-1-6@m contact-labels">
+            <div class="uk-width-1-6 contact-labels">
               <p>Email:</p>
               <p>Phone:</p>
               <p>Social:</p>
             </div>
-            <div class="uk-width-5-6@m contact-details">
+            <div class="uk-width-5-6 contact-details">
               <p><b>tkcwebdev@gmail.com</b></p>
               <p><b>702.336.0322</b></p>
               <p><b>@christoph.theartist</b></p>

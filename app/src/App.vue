@@ -4,7 +4,7 @@
     <div class="uk-container">
       <router-view/>
     </div>
-    <Footer :content=" footerContent " />
+    <Footer />
   </div>
 </template>
 
@@ -50,10 +50,30 @@ html {
 
 .vert-align {
     margin: 0 0 0 20%;
-    position: relative;
-    top: 50%;
+    top: 50vh;
     width: 80%;
-    -webkit-transform: translateY(-50%);
+    transform: translateY(-50vh);
+    position: relative;
+}
+.home .vert-align {
+    position: absolute;
+    top: 50%;
     transform: translateY(-50%);
+  }
+.uk-offcanvas-bar {
+    background: black !important;
+}
+@media(max-width: 760px) {
+  .page-content {
+    min-height: 100vh;
+    height: inherit;
+}
+  .vert-align {
+    margin: 0;
+    width: 100%;
+  }
+  .home .vert-align {
+    width: 90%;
+  }
 }
 </style>
