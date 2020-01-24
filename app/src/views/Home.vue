@@ -41,12 +41,14 @@ export default {
 
 <style scoped>
 h2.name-line {
-    font-size: 18px;
+    font-size: 36px;
     color: var(--secon);
     margin-bottom: 15vh;
+    font-weight: lighter;
 }
 .home-page-nav {
     margin: 10px 0;
+    font-size: 36px;
 }
 .home-page-nav a {
     color: var(--secon);
