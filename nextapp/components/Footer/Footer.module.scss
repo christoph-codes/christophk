@@ -1,0 +1,18 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 0 0;
+  .copyright {
+    padding: 5px 0;
+    p {
+      font-size: 12px;
+      margin: 0;
+      color: var(--secon);
+    }
+    svg path {
+      fill: var(--red);
+      stroke: none;
+    }
+  }
+}
