@@ -1,0 +1,18 @@
+.Section {
+    min-height: 100vh;
+    position: relative;
+    .section_content {
+        max-width: 50%;
+        padding: 150px 0;
+        text-align: center;
+        margin: 0 auto;
+        h1,h2,h3,h4,h5,h6,p,a {
+            color: var(--prime);
+        }
+        a {
+            font-weight: bold;
+            color: var(--secon);
+            text-decoration: underline;
+        }
+    }
+}

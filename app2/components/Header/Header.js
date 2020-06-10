@@ -1,7 +1,30 @@
 import Link from "next/link";
 import styles from "./Header.module.scss";
+import { FaTimes } from "react-icons/fa";
 
 export default function Header(props) {
+  const closeNav = () => {
+    UIkit.offcanvas("#navigation").hide();
+  };
+
+  const navItems = [
+    {
+      name: "My Story",
+      link: "#my-story",
+    },
+    {
+      name: "My Company",
+      link: "#my-company",
+    },
+    {
+      name: "Micro-Startups",
+      link: "#micro-startups",
+    },
+    {
+      name: `Let's Chat`,
+      link: "#lets-chat",
+    },
+  ];
   return (
     <div className={styles.Header}>
       <div className="uk-container">
@@ -20,20 +43,32 @@ export default function Header(props) {
           </div>
           <div className="uk-width-1-2@s uk-width-1-4">
             <div className={styles.nav}>
-              <a href="#navigation"  uk-toggle="target: #navigation">
+              <a href="#navigation" uk-toggle="target: #navigation">
                 <img
                   src="/hamburger.svg"
                   alt="Christopher Kirk Jones logo icon"
                 />
               </a>
               <div id="navigation" uk-offcanvas="flip: true; overlay: true;">
-                <div class="uk-offcanvas-bar">
+                <div className="uk-offcanvas-bar">
                   <button
-                    class="uk-offcanvas-close"
+                    className="uk-offcanvas-close"
                     type="button"
-                    uk-close
-                  ></button>
-                  <p>Mobile Nav</p>
+                    uk-close="true"
+                  >
+                    <FaTimes />
+                  </button>
+                  <div className="mobile-nav-content">
+                    {navItems.map((item) => {
+                      return (
+                        <a key={item.name} href={item.link}uk-scroll="true">
+                          <li onClick={closeNav}>
+                            {item.name}
+                          </li>
+                        </a>
+                      );
+                    })}
+                  </div>
                 </div>
               </div>
             </div>

@@ -1,23 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&display=swap');
 
 :root {
     --prime: #432fa8;
     --secon: #1BE6B0;
+    --ltgray: #F5F5F5;
   }
+
+  * {
+        font-family: 'Montserrat', sans-serif !important;
+    }
+
   body {
     margin: 0;
-    font-family: 'Montserrate',
-      sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-
-  main {
-      min-height: calc(100vh - 100px);
-  }
   
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
-  }
+//   code {
+//     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+//       monospace;
+//   }
+
+  h1, h2, h3, h4, h5, h6, p, li, a {
+    margin: 0 0 10px 0;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 44px;
+}
+h2 {
+  font-weight: lighter;
+  font-size: 40px;
+}
+p, li {
+    font-size: 16px;
+    line-height: 32px;
+}
   

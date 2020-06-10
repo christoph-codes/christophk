@@ -1,0 +1,15 @@
+.home {
+  .home_hero {
+    background-color: var(--prime);
+    h1,
+    h2,
+    p {
+      color: white;
+    }
+  }
+  img {
+    max-width: 100px;
+    margin-bottom: 20px;
+  }
+}
+
