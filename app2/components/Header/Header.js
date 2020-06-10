@@ -20,14 +20,22 @@ export default function Header(props) {
           </div>
           <div className="uk-width-1-2@s uk-width-1-4">
             <div className={styles.nav}>
-            <Link href="/">
-                <a>
-                  <img
-                    src="/hamburger.svg"
-                    alt="Christopher Kirk Jones logo icon"
-                  />
-                </a>
-              </Link>
+              <a href="#navigation"  uk-toggle="target: #navigation">
+                <img
+                  src="/hamburger.svg"
+                  alt="Christopher Kirk Jones logo icon"
+                />
+              </a>
+              <div id="navigation" uk-offcanvas="flip: true; overlay: true;">
+                <div class="uk-offcanvas-bar">
+                  <button
+                    class="uk-offcanvas-close"
+                    type="button"
+                    uk-close
+                  ></button>
+                  <p>Mobile Nav</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

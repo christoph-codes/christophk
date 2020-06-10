@@ -1,6 +1,9 @@
 .Header {
-    background: var(--prime);
+    background: transparent;
     padding: 10px 0;
+    position: fixed;
+    z-index: 9;
+    width: 100%;
     img {
         max-height: 50px;
     }

@@ -1,0 +1,13 @@
+.Hero {
+    background: var(--prime);
+    position: relative;
+    height: calc(100vh - 70px);
+    text-align: center;
+    .content {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        width: 100%;
+    }
+}

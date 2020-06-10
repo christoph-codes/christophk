@@ -2,6 +2,7 @@ import {Fragment} from 'react';
 import Head from "next/head";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
+import Hero from '../UI/Hero/Hero';
 
 export default function Home() {
   return (
@@ -20,6 +21,16 @@ export default function Home() {
       </Head>
 
       <Header />
+      <Hero>
+      <img src="/mememoji.svg" alt="Christopherr Jones Memoji Headshot" />
+        <h1>Christopher Jones</h1>
+        <h2>Full-time Designer. Passionate Programmer. Chronic Creator.</h2>
+        <p>
+          My goal is to work with great teams to work on awesome projects driven
+          by passion, functionality and great design. Front-End Web Developer,
+          UI/UX Designer
+        </p>
+      </Hero>
       <main>
         <h1>My App</h1>
       </main>
