@@ -33,8 +33,18 @@ h2 {
   font-weight: lighter;
   font-size: 40px;
 }
+h3 {
+  font-weight: lighter;
+  font-size: 36px;
+}
 p, li {
     font-size: 16px;
     line-height: 32px;
 }
-  
+.uk-offcanvas-bar {
+  background: var(--prime);
+  box-shadow: 0 0 30px -10px #000;
+}
+.uk-offcanvas-overlay::before {
+  background: rgba(0,0,0,0.7);
+}

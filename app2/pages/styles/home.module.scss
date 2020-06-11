@@ -11,5 +11,15 @@
     max-width: 100px;
     margin-bottom: 20px;
   }
+  .startup {
+    margin: 100px;
+  }
 }
 
+@media(max-width: 763px) {
+  .home {
+    .startup {
+      margin: 100px 0;
+    }
+  }
+}

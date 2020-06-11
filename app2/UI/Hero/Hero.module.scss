@@ -11,3 +11,11 @@
         width: 50%;
     }
 }
+
+@media(max-width: 763px) {
+    .Hero {
+        .content {
+            width: 100%;
+        }
+    }
+}
