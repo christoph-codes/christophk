@@ -80,11 +80,7 @@ export default function Header(props) {
                   >
                     <FaTimes size="1.5em" />
                   </button>
-<<<<<<< HEAD
                   <div className={styles.mobile_nav_content}>
-=======
-                  <div className="mobile-nav-content" uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
->>>>>>> 1a84082a5b63b5847f4913c1923c029c527ba2de
                     {navItems.map((item) => {
                       return (
                         <a key={item.name} href={item.link}uk-scroll="true">
