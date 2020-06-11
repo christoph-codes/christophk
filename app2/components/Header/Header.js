@@ -1,8 +1,30 @@
 import Link from "next/link";
+import {useState, useEffect} from 'react';
 import styles from "./Header.module.scss";
 import { FaTimes } from "react-icons/fa";
 
 export default function Header(props) {
+  // TODO: Install a package for onScroll
+  const [scroll,setScroll] = useState({
+    prevScrollPos: window.pageYOffset,
+    visible: true
+  });
+
+  const handleScroll = () => {
+    const prevScrollpos = prevScrollpos;
+    const currentScrollPos = window.pageYOffset;
+    const visible = prevScrollpos > currentScrollPos;
+    setScroll({
+      prevScrollPos: currentScrollPos,
+      visible
+    })
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [scroll])
+
   const closeNav = () => {
     UIkit.offcanvas("#navigation").hide();
   };
@@ -26,7 +48,7 @@ export default function Header(props) {
     },
   ];
   return (
-    <div className={styles.Header}>
+    <div className={`${styles.Header} ${scroll ? 'scrolled' : null}`}>
       <div className="uk-container">
         <div className="uk-grid">
           <div className="uk-width-1-2">
@@ -58,7 +80,11 @@ export default function Header(props) {
                   >
                     <FaTimes size="1.5em" />
                   </button>
+<<<<<<< HEAD
                   <div className={styles.mobile_nav_content}>
+=======
+                  <div className="mobile-nav-content" uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
+>>>>>>> 1a84082a5b63b5847f4913c1923c029c527ba2de
                     {navItems.map((item) => {
                       return (
                         <a key={item.name} href={item.link}uk-scroll="true">
