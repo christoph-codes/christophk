@@ -4,26 +4,6 @@ import styles from "./Header.module.scss";
 import { FaTimes } from "react-icons/fa";
 
 export default function Header(props) {
-  // TODO: Install a package for onScroll
-  const [scroll,setScroll] = useState({
-    prevScrollPos: window.pageYOffset,
-    visible: true
-  });
-
-  const handleScroll = () => {
-    const prevScrollpos = prevScrollpos;
-    const currentScrollPos = window.pageYOffset;
-    const visible = prevScrollpos > currentScrollPos;
-    setScroll({
-      prevScrollPos: currentScrollPos,
-      visible
-    })
-  }
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [scroll])
 
   const closeNav = () => {
     UIkit.offcanvas("#navigation").hide();
