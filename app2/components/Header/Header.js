@@ -28,7 +28,7 @@ export default function Header(props) {
     },
   ];
   return (
-    <div className={`${styles.Header} ${scroll ? 'scrolled' : null}`}>
+    <div className={styles.Header}>
       <div className="uk-container">
         <div className="uk-grid">
           <div className="uk-width-1-2">
@@ -63,7 +63,7 @@ export default function Header(props) {
                   <div className={styles.mobile_nav_content}>
                     {navItems.map((item) => {
                       return (
-                        <a key={item.name} href={item.link}uk-scroll="true">
+                        <a key={item.name} href={item.link} uk-scroll="true">
                           <li onClick={closeNav}>
                             {item.name}
                           </li>

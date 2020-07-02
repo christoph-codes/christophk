@@ -1,5 +1,5 @@
 .Section {
-    min-height: 100vh;
+    // min-height: 100vh;
     position: relative;
     .section_content {
         max-width: 50%;
@@ -12,7 +12,6 @@
         a {
             font-weight: bold;
             color: var(--secon);
-            text-decoration: underline;
         }
     }
 }

@@ -5,6 +5,8 @@ import Footer from "../components/Footer/Footer";
 import Hero from "../UI/Hero/Hero";
 import styles from "../pages/styles/home.module.scss";
 import Section from "../UI/Section/Section";
+import DownArrow from 'react-icons/fa'
+import { AiOutlineArrowDown } from "react-icons/ai";
 
 export default function Home() {
   const startups = [
@@ -77,6 +79,7 @@ export default function Home() {
             driven by passion, functionality and great design.
           </p>
           <p>Front-End Web Developer, UI/UX Designer</p>
+          <a className="btn" href="#my-story" uk-scroll="true">Learn More »</a>
         </Hero>
         <Section id="my-story" bgColor="white">
           <img
@@ -156,6 +159,9 @@ export default function Home() {
             either way they HAVE to be created because the world needs them.
             More to come, so stay tuned!
           </p>
+          <a href="#my-company" uk-scroll="true">
+            <AiOutlineArrowDown size="3em"/>
+          </a>
         </Section>
         <Section id="my-company" bgColor={`var(--ltgray)`}>
           <img
@@ -180,10 +186,14 @@ export default function Home() {
             not a quality/brand competition.
           </p>
           <p>
-            <a href="https://thekirkconcept.com" target="_blank">
+            <a className="btn" href="https://thekirkconcept.com" target="_blank">
               Visit The Kirk Concept
             </a>
+            
           </p>
+          <a href="#micro-startups" uk-scroll="true">
+            <AiOutlineArrowDown size="3em"/>
+          </a>
         </Section>
         <Section id="micro-startups" bgColor={`white`}>
         <img
@@ -202,6 +212,9 @@ export default function Home() {
               </div>
             );
           })}
+          <a href="#lets-chat" uk-scroll="true">
+            <AiOutlineArrowDown size="3em"/>
+          </a>
         </Section>
         <Section id="lets-chat" bgColor={`var(--ltgray)`}>
           <img
@@ -213,7 +226,7 @@ export default function Home() {
           I’m passionate about new projects and would love to talk to you about your project whether you need it branded or built from scratch. Let’s chat and get the ball rolling on creating something awesome together!
           </p>
           <p>
-            <a href="mailto:tkcwebdev@gmail.com" target="_blank">
+            <a className="btn" href="mailto:tkcwebdev@gmail.com" target="_blank">
               Let's Chat
             </a>
           </p>

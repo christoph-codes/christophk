@@ -48,3 +48,19 @@ p, li {
 .uk-offcanvas-overlay::before {
   background: rgba(0,0,0,0.7);
 }
+a.btn {
+  padding: 10px 50px;
+  background: var(--secon);
+  display: inline-block;
+  border-radius: 25px;
+  min-width: 100px;
+  color: white !important ;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.3s;
+  text-decoration: none;
+  &:hover {
+    background: var(--ltgray);
+    color: var(--prime) !important;
+  }
+}

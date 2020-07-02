@@ -19,5 +19,8 @@
   .nav {
     line-height: 50px;
     text-align: right;
+    img {
+      fill: var(--secon)
+    }
   }
 }
