@@ -34,7 +34,7 @@ export default function Header(props) {
           <div className="uk-width-1-2">
             <div className="logo">
               <Link href="/">
-                <a>
+                <a uk-scroll="true">
                   <img
                     src="/christophk_logo.svg"
                     alt="Christopher Kirk Jones logo icon"

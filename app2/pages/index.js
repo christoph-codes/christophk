@@ -53,10 +53,29 @@ export default function Home() {
       link: "https://facebook.com/mommyfits",
     },
   ];
+  const pageTitle = 'Christopher Kirk Jones A Brand Besigner and Web Developer'
+  const description = 'Christopher Jones who is a Full-time Designer, Passionate Programmer, & Chronic Creator from Las Vegas Nevada. My goal is to work with great teams to work on awesome projects driven by passion, functionality and great design.'
   return (
     <Fragment>
       <Head>
-        <title>Christopher Kirk Jones the designer and web developer</title>
+        <title>{pageTitle}</title>
+        <meta charSet="utf-8" />
+        <meta name="description" content={description}></meta>
+        
++       <meta property="og:title" content={pageTitle} key="ogtitle" />
++       <meta property="og:description" content={description} key="ogdesc" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary" key="twcard" />
+        <meta name="twitter:creator" content="@christoph_art" key="twhandle" />
+
+        {/* Open Graph */}
+        <meta property="og:url" content="https://christophk.com" key="ogurl" />
+        <meta property="og:image" content="/memoji@2x.png" key="ogimage" />
+        <meta property="og:site_name" content={pageTitle} key="ogsitename" />
+        <meta property="og:title" content={pageTitle} key="ogtitle" />
+        <meta property="og:description" content={description} key="ogdesc" />
+
         <link rel="icon" href="/favicon.ico" />
         {/* UIKit CSS imports */}
         <link
