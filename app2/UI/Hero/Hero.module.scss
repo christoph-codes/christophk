@@ -1,0 +1,21 @@
+.Hero {
+    position: relative;
+    height: calc(100vh);
+    text-align: center;
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 50%;
+    }
+}
+
+@media(max-width: 763px) {
+    .Hero {
+        .content {
+            width: 100%;
+        }
+    }
+}

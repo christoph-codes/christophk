@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_11" data-name="Rectangle 11" width="200" height="200" transform="translate(860 3434)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_3" data-name="Mask Group 3" transform="translate(-860 -3434)" clip-path="url(#clip-path)">
+    <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(868 3413)">
+      <text id="_" data-name="💼" transform="translate(92 184)" fill="#fff" font-size="184" font-family="AppleColorEmoji, Apple Color Emoji"><tspan x="-92" y="0">💼</tspan></text>
+    </g>
+  </g>
+</svg>
