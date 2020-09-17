@@ -1,0 +1,12 @@
+.Startup {
+    .startup {
+        margin: 100px;
+      }
+}
+@media(max-width: 763px) {
+    .Startup {
+      .startup {
+        margin: 100px 0;
+      }
+    }
+  }
