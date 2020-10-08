@@ -1,27 +1,22 @@
 .App {
-  .home_hero {
-    background-color: var(--prime);
-    h1,
-    h2,
-    p {
-      color: white;
-    }
+  p,
+  li {
+    font-size: 16px;
+    line-height: 1.5;
   }
-
   img {
     max-width: 100px;
     margin-bottom: 20px;
   }
-  
   .startup {
     margin: 100px;
   }
-   a {
+  a {
     cursor: pointer;
-   }
+  }
 }
 
-@media(max-width: 763px) {
+@media (max-width: 763px) {
   .App {
     .startup {
       margin: 100px 0;
