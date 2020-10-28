@@ -12,7 +12,7 @@ export default function Company(props) {
 					src={briefcase}
 					alt='Christopher Jones owns and operates The Kirk Concept a branding and web development company'
 				/>
-				<h1>My Story</h1>
+				<h1>My Company</h1>
 				<p>
 					The Kirk Concept is all about getting companies excited about their
 					brand. I provide custom logo/branding, graphic design, website
