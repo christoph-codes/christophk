@@ -6,7 +6,7 @@ import './LetsChat.scss';
 export default function LetsChat(props) {
 	return (
 		<div className='LetsChat'>
-			<Section id='lets-chat' bgColor={`var(--ltgray)`}>
+			<Section id='lets-chat' bgColor="white">
 				<img
 					src={chat}
 					alt='Christopher Jones would like to chat with you about your project'

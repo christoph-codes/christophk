@@ -12,7 +12,7 @@ export default function Home(props) {
             <Hero className='home_hero' bgColor="#432fa8">
           <img src={memoji} alt="Christopher Jones Memoji Headshot" />
           <h1>Christopher Jones</h1>
-          <h2>Full-time Designer. Passionate Programmer. Chronic Creator.</h2>
+          <h2>Dedicated Designer. Passionate Programmer. Chronic Creator.</h2>
           <p>
             My goal is to work with great teams to work on awesome projects
             driven by passion, functionality and great design.

@@ -65,7 +65,7 @@ export default function Startups(props) {
 				<h1>Micro-Startups</h1>
 				{startups.map((startup) => {
 					return (
-						<div key={startup.name} className='startup'>
+						<div key={startup.name} className='startup list-section'>
 							<h3>
 								{startup.emoji} {startup.name}
 							</h3>
@@ -76,7 +76,7 @@ export default function Startups(props) {
 						</div>
 					);
 				})}
-				<a href='#lets-chat' uk-scroll='true'>
+				<a href='#milestones' uk-scroll='true'>
 					<AiOutlineArrowDown size='3em' />
 				</a>
 			</Section>

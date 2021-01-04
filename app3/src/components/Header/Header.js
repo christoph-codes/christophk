@@ -26,6 +26,10 @@ export default function Header(props) {
       link: "#micro-startups",
     },
     {
+      name: "Milestones",
+      link: "#milestones",
+    },
+    {
       name: "Let's Chat",
       link: "#lets-chat",
     },

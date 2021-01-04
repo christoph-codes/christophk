@@ -64,3 +64,11 @@ a.btn {
     color: var(--prime) !important;
   }
 }
+.list-section {
+	margin: 100px;
+}
+@media (max-width: 763px) {
+	.list-section {
+		margin: 100px 0;
+	}
+}

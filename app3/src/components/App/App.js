@@ -7,6 +7,7 @@ import Home from '../Home/Home';
 import Startups from '../Startups/Startups';
 import './App.scss';
 import LetsChat from '../LetsChat/LetsChat';
+import Milestones from '../Milestones/Milestones';
 
 function App() {
 	return (
@@ -16,6 +17,7 @@ function App() {
 				<Home />
 				<Company />
 				<Startups />
+				<Milestones/>
 				<LetsChat />
 				<Footer />
 			</div>
