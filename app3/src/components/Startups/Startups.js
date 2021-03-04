@@ -7,10 +7,11 @@ import './Startups.scss';
 export default function Startups(props) {
 	const startups = [
 		{
-			name: 'Grubber',
-			emoji: '🍣',
-			desc: 'An app that joins people together who share the same food interests.',
-			link: 'https://getgrubber.com',
+			name: 'InThisOrder',
+			emoji: '🪀',
+			desc:
+				'InThisOrder is the #1 Task List For Kids Created By Parents!  This was my first app developed in ReactJS',
+			link: 'https://inthisorder.app',
 		},
 		{
 			name: 'The Next Bill',
@@ -20,18 +21,17 @@ export default function Startups(props) {
 			link: 'https://thenextbill.com',
 		},
 		{
-			name: 'InThisOrder',
-			emoji: '🪀',
-			desc:
-				'InThisOrder is the #1 Task List For Kids Created By Parents!  This was my first app developed in ReactJS',
-			link: 'https://inthisorder.app',
-		},
-		{
 			name: 'Equippd',
 			emoji: '✝️',
 			desc:
 				'Equippd is an online ministry that brings believers of Christ from all around who is striving to look more and more like Christ with the way they live their lives.',
 			link: 'https://equippdlife.com',
+		},
+		{
+			name: 'Grubber',
+			emoji: '🍣',
+			desc: 'An app that joins people together who share the same food interests.',
+			link: 'https://getgrubber.com',
 		},
 		{
 			name: 'ShadeShip',
