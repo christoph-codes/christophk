@@ -2,8 +2,14 @@
     // min-height: 100vh;
     position: relative;
     .section_content {
-        max-width: 50%;
+        max-width: 60%;
+        @media(max-width: 767px) {
+            max-width: 90%;
+        }
         padding: 150px 0;
+        @media(max-width: 767px) {
+            padding: 100px 0;
+        }
         text-align: center;
         margin: 0 auto;
         h1,h2,h3,h4,h5,h6,p,a {
@@ -12,22 +18,6 @@
         a {
             font-weight: bold;
             color: var(--secon);
-        }
-    }
-}
-@media(max-width: 1200px) {
-    .Section {
-        .section_content {
-            max-width: 70%;
-            padding: 100px 0;
-        }
-    }
-}
-@media(max-width: 768px) {
-    .Section {
-        .section_content {
-            max-width: 90%;
-            padding: 100px 0;
         }
     }
 }
