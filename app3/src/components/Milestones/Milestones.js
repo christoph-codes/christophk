@@ -1,8 +1,9 @@
 import React from 'react';
 import Section from '../UI/Section/Section';
-import { AiOutlineArrowDown } from "react-icons/ai";
+import { BsChevronDoubleDown } from "react-icons/bs";
 import flag from '../assets/flag.svg';
 import './Milestones.scss'
+import Button from '../Button/Button';
 
 export default function Milestones(props) {
     const milestones = [
@@ -22,7 +23,7 @@ export default function Milestones(props) {
 	];
     return (
         <div className='Milestones'>
-            <Section id="milestones" bgColor={`var(--ltgray)`}>
+            <Section id="milestones" variant="primary">
           <img
             src={flag}
             alt="Christopher Jones Story about his design and development career"
@@ -35,14 +36,14 @@ export default function Milestones(props) {
 								{milestone.emoji} {milestone.name}
 							</h3>
 							<p>{milestone.desc}</p>
-							<a href={milestone.link} rel='noopener noreferrer' target='_blank'>
+							<Button href={milestone.link} rel='noopener noreferrer' target='_blank'>
 								Learn More
-							</a>
+							</Button>
 						</div>
 					);
 				})}
           <a href="#lets-chat" uk-scroll="true">
-            <AiOutlineArrowDown size="3em"/>
+		  <BsChevronDoubleDown size='3em' color='#343a40' />
           </a>
         </Section>
         </div>
