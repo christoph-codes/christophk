@@ -1,5 +1,5 @@
 .Footer {
-    background: var(--prime);
+    background: var(--secon);
     text-align: center;
     padding: 10px 0;
     p {
@@ -7,7 +7,11 @@
         color: white;
         font-size: 14px;
     }
+    a {
+        font-weight: bold;
+        color: var(--prime);
+    }
     svg {
-        color: var(--secon);
+        color: var(--prime);
     }
 }

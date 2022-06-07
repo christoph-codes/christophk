@@ -5,7 +5,7 @@ import './Footer.scss';
 export default function Footer(props) {
     return (
         <div className='Footer'>
-            <p>© 2020. All Rights Reserved. <br className="uk-hidden@s"/> Site Designed with <FaHeart/> by a TKC Pro Company</p>
+            <p>© {new Date().getFullYear()}. All Rights Reserved. <br className="uk-hidden@s"/> Site Designed with <FaHeart/> by a <a alt="Custom Website Development by The Kirk Concept in Las Vegas, Nevada" href="https://thekirkconcept.com">The Kirk Concept</a></p>
         </div>
     );
 }
