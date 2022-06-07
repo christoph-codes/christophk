@@ -1,17 +1,11 @@
 import React from 'react';
 import Header from '../Header/Header';
-import Hero from '../UI/Hero/Hero';
 import Section from '../UI/Section/Section';
-import { AiOutlineArrowDown } from 'react-icons/ai';
-import {
-	TiSocialFacebookCircular,
-	TiSocialTwitterCircular,
-	TiSocialInstagramCircular,
-	TiSocialGithubCircular,
-	TiSocialDribbbleCircular,
-	TiSocialLinkedinCircular,
-} from 'react-icons/ti';
-import memoji from '../assets/memoji.svg';
+import Button from '../Button/Button';
+import { BsChevronDoubleDown } from 'react-icons/bs';
+import { RiFacebookCircleFill } from 'react-icons/ri';
+import { AiFillMediumCircle, AiFillGithub, AiFillTwitterCircle, AiFillInstagram, AiFillLinkedin, AiFillDribbbleCircle } from 'react-icons/ai';
+import memoji from '../assets/memoji@2x.png';
 import book from '../assets/book.svg';
 import './Intro.scss';
 
@@ -20,63 +14,69 @@ export default function Intro(props) {
 		<>
 			<Header />
 			<div className='Intro'>
-				<Hero className='home_hero' bgColor='#432fa8'>
+				<Section variant="secondary" className='home_hero'>
 					<img src={memoji} alt='Christopher Jones Memoji Headshot' />
-					<h1>Christopher Jones</h1>
+					<h1>Christoph Codes<br/><span>@christoph-codes</span></h1>
 					<h2>
-						Dedicated Designer. Passionate Programmer. Chronic
-						Creator.
+					Chronic Creator. Passionate Programmer. Dedicated Designer. 
 					</h2>
-					<p>Front-End Web Developer, UI/UX Designer</p>
-					<a className='btn' href='#my-story' uk-scroll='true'>
+					<p><strong>Senior Full-Stack Web Developer</strong></p>
+					<Button variant="primary" href='#my-story' uk-scroll='true'>
 						Learn More »
-					</a>
+					</Button>
 					<div className='social-icons'>
 						<a
 							target='_blank'
 							rel='noreferrer'
 							href='https://github.com/christoph-codes'
 						>
-							<TiSocialGithubCircular size={34} />
-						</a>
-						<a
-							target='_blank'
-							rel='noreferrer'
-							href='https://www.facebook.com/kingchristoph5'
-						>
-							<TiSocialFacebookCircular size={34} />
-						</a>
-						<a
-							target='_blank'
-							rel='noreferrer'
-							href='https://www.instagram.com/christoph_codes'
-						>
-							<TiSocialInstagramCircular size={34} />
+							<AiFillGithub size={34} />
 						</a>
 						<a
 							target='_blank'
 							rel='noreferrer'
 							href='https://twitter.com/christoph_codes'
 						>
-							<TiSocialTwitterCircular size={34} />
+							<AiFillTwitterCircle size={34} />
 						</a>
 						<a
 							target='_blank'
 							rel='noreferrer'
-							href='https://dribbble.com/christoph-codes'
+							href='https://medium.com/@christoph-codes'
 						>
-							<TiSocialDribbbleCircular size={34} />
+							<AiFillMediumCircle size={34} />
+						</a>
+						<a
+							target='_blank'
+							rel='noreferrer'
+							href='https://www.facebook.com/christophcodes'
+						>
+							<RiFacebookCircleFill size={34} />
+						</a>
+						<a
+							target='_blank'
+							rel='noreferrer'
+							href='https://www.instagram.com/christoph_codes'
+						>
+							<AiFillInstagram size={34} />
 						</a>
 						<a
 							target='_blank'
 							rel='noreferrer'
 							href='https://www.linkedin.com/in/christopherkirkjones'
 						>
-							<TiSocialLinkedinCircular size={34} />
+							<AiFillLinkedin size={34} />
+						</a>
+						<a
+							target='_blank'
+							rel='noreferrer'
+							href='https://dribbble.com/christoph-codes'
+						>
+							<AiFillDribbbleCircle size={34} />
 						</a>
 					</div>
-				</Hero>
-				<Section id='my-story' bgColor='white'>
+				</Section>
+				<Section id='my-story' variant="tertiary">
 					<img
 						src={book}
 						alt='Christopher Jones Story about his design and development career'
@@ -199,7 +199,7 @@ export default function Intro(props) {
 						the world needs them. More to come, so stay tuned!
 					</p>
 					<a href='#my-company' uk-scroll='true'>
-						<AiOutlineArrowDown size='3em' />
+						<BsChevronDoubleDown style={{ marginTop: '2rem' }} size='3em' />
 					</a>
 				</Section>
 			</div>
