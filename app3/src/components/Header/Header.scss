@@ -14,23 +14,34 @@
     margin-top: 50px;
     a {
       display: block;
+      color: var(--secon);
+      cursor: pointer;
       li {
         padding: 20px 0;
         text-align: center;
+        font-weight: bold;
+      font-size: 1.5rem;
       }
     }
   }
   .nav {
     line-height: 50px;
     text-align: right;
-    img {
-      fill: var(--secon);
-      filter: drop-shadow(0 0 4px rgba(0,0,0,0.3));
+    button {
       margin: 0;
       cursor: pointer;
+      border: 0;
+      background: transparent;
+      color: var(--secon);
+      border-radius: 4px;
+      svg {
+        cursor: pointer;
+        path {
+          stroke: var(--prime);
+          stroke-width: 28px;
+        }
+      }
     }
-    svg {
-      cursor: pointer;
-    }
+    
   }
 }
