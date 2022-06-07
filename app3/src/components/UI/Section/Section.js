@@ -1,9 +1,9 @@
 import React from 'react';
 import './Section.scss';
 
-export default function Section({ id, className, bgColor, children}) {
+export default function Section({ className, children, variant, ...rest}) {
     return (
-        <section style={{backgroundColor: bgColor}} className={`Section ${className}`} id={id}>
+        <section className={`Section ${className} ${variant ? `Section__${variant}` : ''}`} {...rest}>
             <div className='section_content'>
             {children}
             </div>
