@@ -1,13 +1,14 @@
 import React from 'react';
 import Section from '../UI/Section/Section';
-import { AiOutlineArrowDown } from "react-icons/ai";
+import { BsChevronDoubleDown } from "react-icons/bs";
 import briefcase from '../assets/briefcase.svg';
 import './Company.scss';
+import Button from '../Button/Button';
 
 export default function Company(props) {
 	return (
 		<div className='Company'>
-			<Section id='my-company' bgColor={`var(--ltgray)`}>
+			<Section id='my-company' variant="primary">
 				<img
 					src={briefcase}
 					alt='Christopher Jones owns and operates The Kirk Concept a branding and web development company'
@@ -29,13 +30,12 @@ export default function Company(props) {
 					brand to the point where it becomes a marketing competition and not a
 					quality/brand competition.
 				</p>
-				<p>
-					<a className='btn' href='https://thekirkconcept.com' rel="noopener noreferrer" target='_blank'>
-						Visit The Kirk Concept
-					</a>
-				</p>
-				<a href='#micro-startups' uk-scroll='true'>
-					<AiOutlineArrowDown size='3em' />
+				<Button variant='primary' href='https://thekirkconcept.com' rel="noopener noreferrer" target='_blank'>
+					Visit The Kirk Concept
+				</Button>
+				<br/>
+				<a style={{ marginTop: '2rem'}} href='#micro-startups' uk-scroll='true'>
+					<BsChevronDoubleDown size='3em' color='#343a40' />
 				</a>
 			</Section>
 		</div>
