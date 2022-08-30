@@ -9,22 +9,38 @@ export default function Startups(props) {
 		{
 			name: 'InThisOrder',
 			emoji: '🪀',
-			desc:
-				'InThisOrder is the #1 Task List For Kids Created By Parents!  This was my first app developed in ReactJS',
+			desc: 'InThisOrder is the #1 Task List For Kids Created By Parents!  This was my first app developed in ReactJS',
+			image: (
+				<>
+					<a
+						href='https://www.producthunt.com/posts/ito-2?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-ito&#0045;2'
+						target='_blank'
+						rel='noreferrer'
+					>
+						<img
+							src='https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=357714&theme=light'
+							alt='Ito - The&#0032;&#0035;1&#0032;Priority&#0032;Task&#0032;List&#0032;For&#0032;Kids&#0044;&#0032;Create&#0032;Your&#0032;Account&#0032;Now&#0033; | Product Hunt'
+							style={{
+								maxWidth: '200px',
+								textAlign: 'center',
+								marginBottom: '16px',
+							}}
+						/>
+					</a>
+				</>
+			),
 			link: 'https://inthisorder.app',
 		},
 		{
 			name: 'The Next Bill',
 			emoji: '💵',
-			desc:
-				'The Next Bill App organizes and prioritizes your bills to properly keep you on track for financial success.',
+			desc: 'The Next Bill App organizes and prioritizes your bills to properly keep you on track for financial success.',
 			link: 'https://thenextbill.com',
 		},
 		{
 			name: 'Equippd',
 			emoji: '✝️',
-			desc:
-				'Equippd is an online ministry that brings believers of Christ from all around who is striving to look more and more like Christ with the way they live their lives.',
+			desc: 'Equippd is an online ministry that brings believers of Christ from all around who is striving to look more and more like Christ with the way they live their lives.',
 			link: 'https://equippdlife.com',
 		},
 		{
@@ -69,7 +85,7 @@ export default function Startups(props) {
 	];
 	return (
 		<div className='Startups'>
-			<Section id='micro-startups' variant="tertiary">
+			<Section id='micro-startups' variant='tertiary'>
 				<img
 					src={lightbulb}
 					alt='Christopher Jones comes up with ideas all the time, and here are his ideas has brought to life'
@@ -77,19 +93,27 @@ export default function Startups(props) {
 				<h1>Micro-Startups</h1>
 				{startups.map((startup) => {
 					return (
-						<div key={startup.name} className='startup list-section'>
+						<div
+							key={startup.name}
+							className='startup list-section'
+						>
 							<h3>
 								{startup.emoji} {startup.name}
 							</h3>
+							{startup.image && startup.image}
 							<p>{startup.desc}</p>
-							<a href={startup.link} rel='noopener noreferrer' target='_blank'>
+							<a
+								href={startup.link}
+								rel='noopener noreferrer'
+								target='_blank'
+							>
 								Visit {startup.name}
 							</a>
 						</div>
 					);
 				})}
 				<a href='#milestones' uk-scroll='true'>
-					<BsChevronDoubleDown size='3em' color="" />
+					<BsChevronDoubleDown size='3em' color='' />
 				</a>
 			</Section>
 		</div>
