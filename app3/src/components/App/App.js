@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router} from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Footer from '../Footer/Footer';
 import Company from '../Company/Company';
 import Intro from '../Intro/Intro';
@@ -15,7 +15,7 @@ function App() {
 				<Intro />
 				<Company />
 				<Startups />
-				<Milestones/>
+				<Milestones />
 				<LetsChat />
 				<Footer />
 			</div>
