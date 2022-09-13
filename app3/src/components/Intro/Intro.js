@@ -1,85 +1,99 @@
-import React from 'react';
-import Header from '../Header/Header';
-import Section from '../UI/Section/Section';
-import Button from '../Button/Button';
-import { BsChevronDoubleDown } from 'react-icons/bs';
-import { RiFacebookCircleFill } from 'react-icons/ri';
-import { AiFillMediumCircle, AiFillGithub, AiFillTwitterCircle, AiFillInstagram, AiFillLinkedin, AiFillDribbbleCircle } from 'react-icons/ai';
-import memoji from '../assets/memoji@2x.png';
-import book from '../assets/book.svg';
-import './Intro.scss';
+import React from "react";
+import Header from "../Header/Header";
+import Section from "../UI/Section/Section";
+import Button from "../Button/Button";
+import { BsChevronDoubleDown } from "react-icons/bs";
+import { RiFacebookCircleFill } from "react-icons/ri";
+import {
+	AiFillMediumCircle,
+	AiFillGithub,
+	AiFillTwitterCircle,
+	AiFillInstagram,
+	AiFillLinkedin,
+	AiFillDribbbleCircle,
+} from "react-icons/ai";
+import memoji from "../assets/memoji@2x.png";
+import book from "../assets/book.svg";
+import "./Intro.scss";
 
 export default function Intro(props) {
 	return (
 		<>
 			<Header />
-			<div className='Intro'>
-				<Section variant="secondary" className='home_hero'>
-					<img src={memoji} alt='Christopher Jones Memoji Headshot' />
-					<h1>Christoph Codes<br/><span>@christoph-codes</span></h1>
+			<div className="Intro">
+				<Section variant="secondary" className="home_hero">
+					<img src={memoji} alt="Christopher Jones Memoji Headshot" />
+					<h1>
+						Christoph Codes
+						<br />
+						<span>@christoph-codes</span>
+					</h1>
 					<h2>
-					Chronic Creator. Passionate Programmer. Dedicated Designer. 
+						Chronic Creator. Passionate Programmer. Dedicated
+						Designer.
 					</h2>
-					<p><strong>Senior Full-Stack Web Developer</strong></p>
-					<Button variant="primary" href='#my-story' uk-scroll='true'>
+					<p>
+						<strong>Senior Full-Stack Web Developer</strong>
+					</p>
+					<Button variant="primary" href="#my-story" uk-scroll="true">
 						Learn More »
 					</Button>
-					<div className='social-icons'>
+					<div className="social-icons">
 						<a
-							target='_blank'
-							rel='noreferrer'
-							href='https://github.com/christoph-codes'
+							target="_blank"
+							rel="noopener noreferrer"
+							href="https://github.com/christoph-codes"
 						>
 							<AiFillGithub size={34} />
 						</a>
 						<a
-							target='_blank'
-							rel='noreferrer'
-							href='https://twitter.com/christoph_codes'
+							target="_blank"
+							rel="noopener noreferrer"
+							href="https://twitter.com/christoph_codes"
 						>
 							<AiFillTwitterCircle size={34} />
 						</a>
 						<a
-							target='_blank'
-							rel='noreferrer'
-							href='https://medium.com/@christoph-codes'
+							target="_blank"
+							rel="noopener noreferrer"
+							href="https://medium.com/@christoph-codes"
 						>
 							<AiFillMediumCircle size={34} />
 						</a>
 						<a
-							target='_blank'
-							rel='noreferrer'
-							href='https://www.facebook.com/christophcodes'
+							target="_blank"
+							rel="noopener noreferrer"
+							href="https://www.facebook.com/christophcodes"
 						>
 							<RiFacebookCircleFill size={34} />
 						</a>
 						<a
-							target='_blank'
-							rel='noreferrer'
-							href='https://www.instagram.com/christoph_codes'
+							target="_blank"
+							rel="noopener noreferrer"
+							href="https://www.instagram.com/christoph_codes"
 						>
 							<AiFillInstagram size={34} />
 						</a>
 						<a
-							target='_blank'
-							rel='noreferrer'
-							href='https://www.linkedin.com/in/christopherkirkjones'
+							target="_blank"
+							rel="noopener noreferrer"
+							href="https://www.linkedin.com/in/christopherkirkjones"
 						>
 							<AiFillLinkedin size={34} />
 						</a>
 						<a
-							target='_blank'
-							rel='noreferrer'
-							href='https://dribbble.com/christoph-codes'
+							target="_blank"
+							rel="noopener noreferrer"
+							href="https://dribbble.com/christoph-codes"
 						>
 							<AiFillDribbbleCircle size={34} />
 						</a>
 					</div>
 				</Section>
-				<Section id='my-story' variant="tertiary">
+				<Section id="my-story" variant="tertiary">
 					<img
 						src={book}
-						alt='Christopher Jones Story about his design and development career'
+						alt="Christopher Jones Story about his design and development career"
 					/>
 					<h1>My Story</h1>
 					<p>
@@ -89,14 +103,14 @@ export default function Intro(props) {
 						and we have two happy kids together! I received my
 						bachelors degree in graphic design from the University
 						of Nevada Las Vegas. I started a branding and logo
-						design business called{' '}
+						design business called{" "}
 						<a
-							href='https://thekirkconcept.com'
-							rel='noopener noreferrer'
-							target='_blank'
+							href="https://thekirkconcept.com"
+							rel="noopener noreferrer"
+							target="_blank"
 						>
 							The Kirk Concept
-						</a>{' '}
+						</a>{" "}
 						that I will always continue to grow. In addition to
 						designing, I am a self-taught web developer since 2010
 						and started programming in 2015. I’m a huge believer in
@@ -110,28 +124,28 @@ export default function Intro(props) {
 						do, so always expect a smile unless the Vegas sun is
 						beaming on my eyelids. I enjoy the sport of football
 						since I played at the age of seven all the way through
-						college at{' '}
+						college at{" "}
 						<a
-							href='https://unlv.edu'
-							rel='noopener noreferrer'
-							target='_blank'
+							href="https://unlv.edu"
+							rel="noopener noreferrer"
+							target="_blank"
 						>
 							UNLV.
-						</a>{' '}
+						</a>{" "}
 						I’m a Vegas-Everything fan. I’ve never truly left the
 						country yet, outside of Ensenada, Mexico, which I don’t
 						feel counts as leaving the country because it is still
 						connected to the U.S.. I try to read as many self help
 						books as I can and watch a long list of Netflix shows.
 						The Cosby Show and Fresh Prince are hands down the best
-						shows to binge-watch.{' '}
+						shows to binge-watch.{" "}
 						<a
-							href='https://www.hbo.com/silicon-valley'
-							rel='noopener noreferrer'
-							target='_blank'
+							href="https://www.hbo.com/silicon-valley"
+							rel="noopener noreferrer"
+							target="_blank"
 						>
 							Silicon Valley
-						</a>{' '}
+						</a>{" "}
 						is probably the most hilarious and relatable show I’ve
 						ever seen. I’m an Apple guy since 2009 and coffee is new
 						for me but it is a must-have everyday!
@@ -139,11 +153,11 @@ export default function Intro(props) {
 					<p>
 						I have created/started many of amazing ideas from a
 						personal training facility MySoloGym, to a Christian
-						lifestyle brand{' '}
+						lifestyle brand{" "}
 						<a
-							href='https://www.equippdlife.com'
-							rel='noopener noreferrer'
-							target='_blank'
+							href="https://www.equippdlife.com"
+							rel="noopener noreferrer"
+							target="_blank"
 						>
 							Equippd
 						</a>
@@ -154,43 +168,43 @@ export default function Intro(props) {
 					<p>
 						I’m currently working on a Pokemon manager app with a
 						good friend. I’m also building a bill management app
-						called{' '}
+						called{" "}
 						<a
-							href='https://www.thenextbill.com'
-							rel='noopener noreferrer'
-							target='_blank'
+							href="https://www.thenextbill.com"
+							rel="noopener noreferrer"
+							target="_blank"
 						>
 							NextBill
-						</a>{' '}
+						</a>{" "}
 						written in
 						<a
-							href='https://vuejs.org/'
-							rel='noopener noreferrer'
-							target='_blank'
+							href="https://vuejs.org/"
+							rel="noopener noreferrer"
+							target="_blank"
 						>
 							Vue.JS
-						</a>{' '}
-						and a fun kids task management app called{' '}
+						</a>{" "}
+						and a fun kids task management app called{" "}
 						<a
-							href='https://www.inthisorder.app'
-							rel='noopener noreferrer'
-							target='_blank'
+							href="https://www.inthisorder.app"
+							rel="noopener noreferrer"
+							target="_blank"
 						>
 							InThisOrder
-						</a>{' '}
-						written in{' '}
+						</a>{" "}
+						written in{" "}
 						<a
-							href='https://reactjs.org/'
-							rel='noopener noreferrer'
-							target='_blank'
+							href="https://reactjs.org/"
+							rel="noopener noreferrer"
+							target="_blank"
 						>
 							React
-						</a>{' '}
-						and soon to be{' '}
+						</a>{" "}
+						and soon to be{" "}
 						<a
-							href='https://reactnative.dev/'
-							rel='noopener noreferrer'
-							target='_blank'
+							href="https://reactnative.dev/"
+							rel="noopener noreferrer"
+							target="_blank"
 						>
 							React Native
 						</a>
@@ -198,8 +212,11 @@ export default function Intro(props) {
 						execute but either way they HAVE to be created because
 						the world needs them. More to come, so stay tuned!
 					</p>
-					<a href='#my-company' uk-scroll='true'>
-						<BsChevronDoubleDown style={{ marginTop: '2rem' }} size='3em' />
+					<a href="#my-company" uk-scroll="true">
+						<BsChevronDoubleDown
+							style={{ marginTop: "2rem" }}
+							size="3em"
+						/>
 					</a>
 				</Section>
 			</div>
