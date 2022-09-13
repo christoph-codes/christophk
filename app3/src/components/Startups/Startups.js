@@ -1,65 +1,77 @@
-import React from 'react';
-import Section from '../UI/Section/Section';
-import { BsChevronDoubleDown } from 'react-icons/bs';
-import lightbulb from '../assets/lightbulb.svg';
-import './Startups.scss';
+import React from "react";
+import Section from "../UI/Section/Section";
+import { BsChevronDoubleDown } from "react-icons/bs";
+import lightbulb from "../assets/lightbulb.svg";
+import "./Startups.scss";
 
-export default function Startups(props) {
+export default function Startups() {
 	const startups = [
 		{
-			name: 'InThisOrder',
-			emoji: '🪀',
-			desc: 'InThisOrder is the #1 Task List For Kids Created By Parents!  This was my first app developed in ReactJS',
+			name: "InThisOrder",
+			emoji: "🪀",
+			desc: "InThisOrder is the #1 Task List For Kids Created By Parents!  Developed in ReactJS & Firebase",
 			image: (
 				<>
 					<a
-						href='https://www.producthunt.com/posts/ito-2?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-ito&#0045;2'
-						target='_blank'
-						rel='noreferrer'
+						href="https://www.producthunt.com/posts/ito-2?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-ito&#0045;2"
+						target="_blank"
+						rel="noopener noreferrer"
 					>
 						<img
-							src='https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=357714&theme=light'
-							alt='Ito - The&#0032;&#0035;1&#0032;Priority&#0032;Task&#0032;List&#0032;For&#0032;Kids&#0044;&#0032;Create&#0032;Your&#0032;Account&#0032;Now&#0033; | Product Hunt'
+							src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=357714&theme=light"
+							alt="Ito - The&#0032;&#0035;1&#0032;Priority&#0032;Task&#0032;List&#0032;For&#0032;Kids&#0044;&#0032;Create&#0032;Your&#0032;Account&#0032;Now&#0033; | Product Hunt"
 							style={{
-								maxWidth: '200px',
-								textAlign: 'center',
-								marginBottom: '16px',
+								maxWidth: "200px",
+								textAlign: "center",
+								marginBottom: "16px",
 							}}
 						/>
 					</a>
 				</>
 			),
-			link: 'https://inthisorder.app',
+			link: "https://inthisorder.app",
 		},
 		{
-			name: 'The Next Bill',
-			emoji: '💵',
-			desc: 'The Next Bill App organizes and prioritizes your bills to properly keep you on track for financial success.',
-			link: 'https://thenextbill.com',
+			name: "Vet My Ideas",
+			emoji: "💡",
+			desc: "This worksheet will help you sift through your idea from a high level and breakdown each part of your idea into action items that will increase your confidence.",
+			link: "https://christophcodes.gumroad.com/l/vetmyideas",
 		},
 		{
-			name: 'Equippd',
-			emoji: '✝️',
-			desc: 'Equippd is an online ministry that brings believers of Christ from all around who is striving to look more and more like Christ with the way they live their lives.',
-			link: 'https://equippdlife.com',
+			name: "Wallet",
+			emoji: "💳",
+			desc: "Wallet is a personal credit card wallet for the DEV Redis Hackathon. August 2022. Developed in ReactJS, Redis OM, & Firebase",
+			link: "https://wallet-82c94.web.app/",
 		},
 		{
-			name: 'Grubber',
-			emoji: '🍣',
-			desc: 'An app that joins people together who share the same food interests.',
-			link: 'https://getgrubber.com',
+			name: "The Next Bill",
+			emoji: "💵",
+			desc: "The Next Bill App organizes and prioritizes your bills to properly keep you on track for financial success.",
+			link: "https://thenextbill.com",
 		},
 		{
-			name: 'Bulb',
-			emoji: '💡',
-			desc: 'A community of ideas by founders and entrepreneurs. Partnering with the infamous Eric Feuerstein @fireprone',
-			link: 'https://github.com/christoph-codes/bulb',
+			name: "Equippd",
+			emoji: "✝️",
+			desc: "Equippd is an online ministry that brings believers of Christ from all around who is striving to look more and more like Christ with the way they live their lives.",
+			link: "https://equippdlife.com",
 		},
 		{
-			name: 'Reverse Recipe',
-			emoji: '🍗',
-			desc: 'Use your ingredients to find the perfect recipe.',
-			link: 'https://github.com/DebitTwo/reverseRecipe',
+			name: "Grubber",
+			emoji: "🍣",
+			desc: "An app that joins people together who share the same food interests.",
+			link: "https://getgrubber.com",
+		},
+		{
+			name: "Bulb",
+			emoji: "💡",
+			desc: "A community of ideas by founders and entrepreneurs. Partnering with the infamous Eric Feuerstein @fireprone",
+			link: "https://github.com/christoph-codes/bulb",
+		},
+		{
+			name: "Reverse Recipe",
+			emoji: "🍗",
+			desc: "Use your ingredients to find the perfect recipe.",
+			link: "https://github.com/DebitTwo/reverseRecipe",
 		},
 		// {
 		// 	name: 'ShadeShip',
@@ -84,18 +96,18 @@ export default function Startups(props) {
 		// },
 	];
 	return (
-		<div className='Startups'>
-			<Section id='micro-startups' variant='tertiary'>
+		<div className="Startups">
+			<Section id="micro-startups" variant="tertiary">
 				<img
 					src={lightbulb}
-					alt='Christopher Jones comes up with ideas all the time, and here are his ideas has brought to life'
+					alt="Christopher Jones comes up with ideas all the time, and here are his ideas has brought to life"
 				/>
 				<h1>Micro-Startups</h1>
 				{startups.map((startup) => {
 					return (
 						<div
 							key={startup.name}
-							className='startup list-section'
+							className="startup list-section"
 						>
 							<h3>
 								{startup.emoji} {startup.name}
@@ -104,16 +116,16 @@ export default function Startups(props) {
 							<p>{startup.desc}</p>
 							<a
 								href={startup.link}
-								rel='noopener noreferrer'
-								target='_blank'
+								rel="noopener noreferrer"
+								target="_blank"
 							>
 								Visit {startup.name}
 							</a>
 						</div>
 					);
 				})}
-				<a href='#milestones' uk-scroll='true'>
-					<BsChevronDoubleDown size='3em' color='' />
+				<a href="#milestones" uk-scroll="true">
+					<BsChevronDoubleDown size="3em" color="" />
 				</a>
 			</Section>
 		</div>
