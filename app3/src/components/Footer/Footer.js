@@ -2,7 +2,7 @@ import React from "react";
 import { FaHeart } from "react-icons/fa";
 import "./Footer.scss";
 
-export default function Footer(props) {
+export default function Footer() {
 	return (
 		<div className="Footer">
 			<p>
