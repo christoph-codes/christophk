@@ -4,6 +4,7 @@ import Section from "../UI/Section/Section";
 import Button from "../Button/Button";
 import { BsChevronDoubleDown } from "react-icons/bs";
 import { RiFacebookCircleFill } from "react-icons/ri";
+import { FaDev } from "react-icons/fa";
 import {
 	AiFillMediumCircle,
 	AiFillGithub,
@@ -16,7 +17,7 @@ import memoji from "../assets/memoji@2x.png";
 import book from "../assets/book.svg";
 import "./Intro.scss";
 
-export default function Intro(props) {
+export default function Intro() {
 	return (
 		<>
 			<Header />
@@ -45,6 +46,13 @@ export default function Intro(props) {
 							href="https://github.com/christoph-codes"
 						>
 							<AiFillGithub size={34} />
+						</a>
+						<a
+							target="_blank"
+							rel="noopener noreferrer"
+							href="https://dev.to/christoph_codes"
+						>
+							<FaDev size={34} />
 						</a>
 						<a
 							target="_blank"
